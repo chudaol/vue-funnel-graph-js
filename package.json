@@ -1,7 +1,7 @@
 {
-  "name": "vue-funnel-graph-js",
-  "version": "0.1.8",
-  "description": "",
+  "name": "vue-funnel-graph-js-fixed-node-sass-dep",
+  "version": "1",
+  "description": "Vue funnel graph with fixed node-sass dependency",
   "main": "dist/vue-funnel-graph.umd.js",
   "module": "dist/vue-funnel-graph.esm.js",
   "unpkg": "dist/vue-funnel-graph.min.js",
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/greghub/vue-funnel-graph-js.git"
+    "url": "https://github.com/chudaol/vue-funnel-graph-js.git"
   },
   "licence": "MIT",
   "keywords": [
