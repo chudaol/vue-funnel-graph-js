@@ -1,6 +1,6 @@
 {
   "name": "vue-funnel-graph-js-fixed-node-sass-dep",
-  "version": "0.1",
+  "version": "0.0.2",
   "description": "Vue funnel graph with fixed node-sass dependency",
   "main": "dist/vue-funnel-graph.umd.js",
   "module": "dist/vue-funnel-graph.esm.js",
@@ -34,6 +34,7 @@
     "vue-funnel"
   ],
   "scripts": {
+    "serve": "vue-cli-service serve src/example.vue",
     "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
     "build:umd": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format umd --file dist/vue-funnel-graph.umd.js",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es --file dist/vue-funnel-graph.esm.js",
@@ -56,9 +57,10 @@
     "rollup": "^2.79.1",
     "rollup-plugin-scss": "^3.0.0",
     "rollup-plugin-uglify-es": "^0.0.1",
-    "rollup-plugin-vue": "^6.0.0",
+    "rollup-plugin-vue": "5.0.0",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11",
-    "webpack": "^5.74.0"
+    "webpack": "^5.74.0",
+    "@vue/cli-service": "^5.0.8"
   }
 }
