@@ -1,6 +1,6 @@
 {
   "name": "vue-funnel-graph-js-fixed-node-sass-dep",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Vue funnel graph with fixed node-sass dependency",
   "main": "dist/vue-funnel-graph.umd.js",
   "module": "dist/vue-funnel-graph.esm.js",
