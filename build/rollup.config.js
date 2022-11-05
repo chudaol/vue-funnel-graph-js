@@ -1,10 +1,11 @@
 // rollup.config.js
 import vue from 'rollup-plugin-vue';
-import buble from 'rollup-plugin-buble';
-import commonjs from 'rollup-plugin-commonjs';
-import replace from 'rollup-plugin-replace';
-import { terser } from 'rollup-plugin-terser';
+import buble from '@rollup/plugin-buble';
+import commonjs from '@rollup/plugin-commonjs';
+import replace from '@rollup/plugin-replace';
+import terser from '@rollup/plugin-terser';
 import minimist from 'minimist';
+import scss from 'rollup-plugin-scss';
 
 const argv = minimist(process.argv.slice(2));
 
@@ -31,10 +32,6 @@ const config = {
       'funnel-graph-js/src/scss/theme.scss'
   ],
   plugins: [
-    replace({
-      'process.env.NODE_ENV': JSON.stringify('production'),
-    }),
-    commonjs(),
     vue({
       css: true,
       compileTemplate: true,
@@ -42,6 +39,11 @@ const config = {
         isProduction: true,
       },
     }),
+    scss(),
+    replace({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+    }),
+    commonjs(),
     buble(),
   ],
 };
